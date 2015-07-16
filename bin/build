@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+SCRIPT_HOME="$( cd "$( dirname "$0" )" && pwd )"
+CHARMANDER_HOME=$(pwd)
+
+cd $CHARMANDER_HOME
+
+# set the experiment name, should be the same as the directory name of your experiment inside of the
+# experiments folder
+EXPERIMENT_NAME=sparkkernel
+
+for LAB_NODE in $(cat node_lab.txt)
+do
+    vagrant ssh -c "sudo /vagrant/bin/invm/build_experiments_services.sh $EXPERIMENT_NAME" $LAB_NODE
+done
+
+for ANALYTICS_NODE in $(cat node_analytics.txt)
+do
+    vagrant ssh -c "sudo /vagrant/bin/invm/build_experiments_analytics.sh $EXPERIMENT_NAME" $ANALYTICS_NODE
+done
+
+cd - > /dev/null
