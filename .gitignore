@@ -1,0 +1,8 @@
+# dev environment files
+.DS_Store
+.vagrant
+.idea
+project
+target
+
+
