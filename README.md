@@ -37,12 +37,12 @@ Run Spark-Kernel with Charmander
 	./experiments/sparkkernel/bin/start_stress60mb
 	./experiments/sparkkernel/bin/start_sparkkernel
 
-Open Spark-Kernel/jupyter at [172.31.2.11:31800/](http://172.31.2.11:31800/)
+Wait a few seconds and open Spark-Kernel/jupyter at [172.31.2.11:31800/](http://172.31.2.11:31800/)
 
 Open the _CharmanderUtils.ipynb_ notebook and wait until the Spark Kernel is ready, indicated in the header by the dot
 changing in to a circle, that takes roughly 10s, and you should see something like this:
 
-![image](https://github.com/att-innovate/charmander-experiment-sparkkernel/blob/master/docs/assets/SparkKernel.png?raw=true)
+![image](https://github.com/att-innovate/charmander-experiment-sparkkernel/blob/master/docs/SparkKernel.png?raw=true)
 
 You can now execute all the _cells_ using menu _Cell/Run All_ .. Have fun!
 
