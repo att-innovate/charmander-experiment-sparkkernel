@@ -11,9 +11,8 @@ similar to [maxusage](https://github.com/att-innovate/charmander-experiment-maxu
 A local Charmander cluster has to be up and running.
 Related documentation available at [https://github.com/att-innovate/charmander](https://github.com/att-innovate/charmander).
 
-Change your working directory to your local Charmander installation, and reset the Charmander cluster.
+Verify that you are in your local Charmander directory and reset the Charmander cluster.
 
-	cd charmander
 	./bin/reset_cluster
 
 Verify that no task is running using the Mesos console at [http://172.31.1.11:5050](http://172.31.1.11:5050)
