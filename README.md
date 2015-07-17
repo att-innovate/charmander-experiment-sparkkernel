@@ -13,7 +13,7 @@ Related documentation available at [https://github.com/att-innovate/charmander](
 
 Verify that you are in your local Charmander directory and reset the Charmander cluster.
 
-	./bin/reset_cluster
+    ./bin/reset_cluster
 
 Verify that no task is running using the Mesos console at [http://172.31.1.11:5050](http://172.31.1.11:5050)
 
@@ -21,20 +21,20 @@ Verify that no task is running using the Mesos console at [http://172.31.1.11:50
 
 Change to the experiments folder and check out the code into a folder called `sparkkernel`
 
-	cd experiments
-	git clone https://github.com/att-innovate/charmander-experiment-sparkkernel.git sparkkernel
+    cd experiments
+    git clone https://github.com/att-innovate/charmander-experiment-sparkkernel.git sparkkernel
 
 Change your working directory back to the root of Charmander and start the build process
 
-	cd ..
-	./experiments/sparkkernel/bin/build
+    cd ..
+    ./experiments/sparkkernel/bin/build
 
 Run Spark-Kernel with Charmander
 
-	./bin/start_cadvisor
-	./bin/start_analytics
-	./experiments/sparkkernel/bin/start_stress60mb
-	./experiments/sparkkernel/bin/start_sparkkernel
+    ./bin/start_cadvisor
+    ./bin/start_analytics
+    ./experiments/sparkkernel/bin/start_stress60mb
+    ./experiments/sparkkernel/bin/start_sparkkernel
 
 Wait a few seconds and open Spark-Kernel/jupyter at [172.31.2.11:31800/](http://172.31.2.11:31800/)
 
